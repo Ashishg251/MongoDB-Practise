@@ -1,0 +1,94 @@
+<html>
+<head>
+  <% include page/head.ejs %>
+</head>
+  <body>
+
+    <div class="container-fluid">
+      <% include page/header.ejs %>
+      <div class="row" id="row_well">
+
+        <!-- INSERT YOUR CODE HERE AND DELETE THE BELOW WHOLE CONTAINER CLASS -->
+
+        <div class="container" id="main">
+
+
+
+          <div class="row" id="moreInfo">
+            <div class="col-lg-12">
+              <h2>Apt-log Data rate</h2>
+              <div class="tabbable">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab1" data-toggle="tab" class="tab-link" id="year_tab">Year-wise</a></li>
+                  <li><a href="#tab2" data-toggle="tab" class="tab-link" id="month_tab">Month-wise</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tab1">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Year<span class="caret"></span></button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#" id="y2015">2015</a></li>
+      </ul>
+    </div>
+                  </div>
+                  <div class="tab-pane" id="tab2">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Year<span class="caret"></span></button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li><a href="#" id="y15">2015</a></li>
+                        </ul>
+                    </div>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Month<span class="caret"></span></button>
+                      <ul id="monthList1" class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                        <li><a href="#" id="Jan">January</a></li>
+                        <li><a href="#" id="Feb">February</a></li>
+                        <li><a href="#" id="Mar">March</a></li>
+                        <li><a href="#" id="Apr">April</a></li>
+                        <li><a href="#" id="May">May</a></li>
+                        <li><a href="#" id="Jun">June</a></li>
+                        <li><a href="#" id="Jul">July</a></li>
+                        <li><a href="#" id="Aug">August</a></li>
+                        <li><a href="#" id="Sep">September</a></li>
+                        <li><a href="#" id="Oct">October</a></li>
+                        <li><a href="#" id="Nov">November</a></li>
+                        <li><a href="#" id="Dec">December</a></li>
+                      </ul>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- end row -->
+          <hr>
+          <div  id="radio" class="alert alert-info">
+                  <div class="form-inline">
+                      <label class="control-label">
+                          Filter</label>
+                      <label class="radio">
+                          <input value="all" name="filter"  type="radio" checked>All
+                      </label>
+                      <label class="radio">
+                          <input value="metadata" name="filter" type="radio">Metadata
+                      </label>
+                      <label class="radio">
+                          <input value="package" name="filter" type="radio">Packages
+                      </label>
+                  </div>
+              </div>
+
+        </div><!-- end container -->
+
+
+
+        <!-- Delete Till Here -->
+
+			</div> <!-- end row_well -->
+      <% include page/footer.ejs %>
+    </div> <!-- end container-fluid -->
+    <% include page/jsDefaults.ejs %>
+  </body>
+</html>
